@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Input Field floating without js</title>
     <style>
         body {
             margin: 0;
@@ -17,7 +17,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fafafa;
         }
 
         .form {
@@ -25,7 +24,6 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            width: 95%;
             max-width: 300px;
             background-color: white;
             border: 1px solid rgba(0, 0, 0, 0.12);
@@ -33,7 +31,7 @@
             box-shadow: 0 0 8px 0 rgb(0 0 0 / 8%), 0 0 15px 0 rgb(0 0 0 / 2%), 0 0 20px 4px rgb(0 0 0 / 6%);
         }
 
-        .input-container {
+        .form-control {
             position: relative;
             border-radius: 4px 4px 0 0;
             height: 56px;
@@ -90,12 +88,12 @@
 <body>
     <div class="form-container">
         <form class="form" action="">
-            <div class="input-container">
-                <input type="text" id="name" value="eee" placeholder="test" required/>
+            <div class="form-control">
+                <input type="text" id="name" placeholder="test" required/>
                 <label for="name">First Name</label>
             </div>
             
-            <div class="input-container">
+            <div class="form-control">
                 <input type="email" id="email" placeholder="testing" required/>
                 <label for="email">Email</label>
             </div>
