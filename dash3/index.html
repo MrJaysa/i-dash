@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash 3</title>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <form action="" method="post" id="test1">
+            <input type="text" required name="test">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+        </form>
+    
+        <form action="" method="post" id="test2" class="preventDefault">
+            <input type="text" required name="test">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+            <br>
+        </form>
+    </div>
+    
+    <br>
+    
+    <button id="btn1" class="formCreate">Create a form</button>
+
+    <!-- to prevent children from having their own event and tie it to parent -->
+    <div class="formCreate">
+        <span style="pointer-events: none;">test</span>
+    </div>
+    
+    <script>
+        let form_count = 3
+        document.addEventListener('submit', (e) => {
+            if (e.target.classList.contains('preventDefault')) {
+                e.preventDefault();
+                console.log(e.target);
+            }
+        });
+        
+        document.addEventListener('click', (e) => {
+            if (Array.from(e.target.classList).includes('formCreate')) {
+                console.log(e.target)
+                document.querySelector('.flex').insertAdjacentHTML('beforeend', `
+                    <form action="" method="post" id="test${form_count}" class="preventDefault">
+                        <input type="text" required name="test">
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                        <br>
+                        <br>
+                    </form>
+                `);
+                form_count++
+            }
+        });
+    </script>
+</body>
+</html>
