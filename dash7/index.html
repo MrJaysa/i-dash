@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navs</title>
+        <link rel="stylesheet" href="./boxicons-2.1.2/css/boxicons.min.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/utilities.css">
+    </head>
+    <body class="relative">
+        <section class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <img src="./images/i-100.png" alt="">
+                    <div class="logo_name font-8">Class</div>
+                </div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
+                </li>
+
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bx-grid-alt' ></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-money bx-tada-hover' ></i>
+                        <span class="links_name">Transactions</span>
+                    </a>
+                    <span class="tooltip">Transactions</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-chat bx-tada-hover' ></i>
+                        <span class="links_name">Messages</span>
+                    </a>
+                    <span class="tooltip">Messages</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2 bx-flashing-hover' ></i>
+                        <span class="links_name">Statistics</span>
+                    </a>
+                    <span class="tooltip">Statistics</span>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bx-spin-hover bx-cog' ></i>
+                        <span class="links_name">Settings</span>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+                
+                <li>
+                    <a href="#">
+                        <i class='bx bx-help-circle bx-burst-hover'></i>
+                        <span class="links_name">Help</span>
+                    </a>
+                    <span class="tooltip">Help</span>
+                </li>
+            </ul>
+
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="./images/user.jpg" alt="">
+                        <div class="name_job">
+                            <div class="name" title="Jessica Omo">Jessica Omo</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="main">
+            <div class="main-content">
+                <div class="topbar">
+                    <div class="brand">
+                        <i class='bx bx-menu sm-menu' id="btn" ></i>
+                        <img class="icon" src="./images/i-class2.png" alt="">
+                        <div class="logo_name">Class</div>
+                    </div>
+                    <div class="navigation">
+                        <div class="message cta">
+                            <span class="count">9+</span>
+                            <i class='bx bx-message-alt' ></i>
+                            <div class="sub-dropdown">
+                                <ul>
+                                    <li>
+                                        <a class="details" href="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <div>
+                                                <span>Jessica Omo</span>
+                                                <span>11:23am</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="details" href="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <div>
+                                                <span>Jessica Omo</span>
+                                                <span>11:23am</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="notification cta">
+                            <span class="count">0</span>
+                            <i class='bx bx-bell' ></i>
+                            <div class="sub-dropdown">
+                                <p class="no-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="user cta">
+                            <img class="user-image" src="./images/user.jpg" alt="">
+                            <div class="sub-dropdown">
+                                <div class="dropdown-head">
+                                    <h3 class="font-2">Jessica Omo</h3>
+                                    <img src="./images/user.jpg" alt="">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a class="details" href="#">
+                                            <span class="links_name font-900">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="details" href="#">
+                                            <span class="links_name font-900">Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content pt-7">
+                    <div class="users grid grid-4">
+                        <div class="card shadow scale-up br-10 p-2">
+                            <div class="grid align-items-center justify-space-between">
+                                <h3 class="font-5">Admin</h3>
+                                <i class="count-icon bx bx-shield-quarter font-7"></i>
+                                <span class="font-3">10</span>
+                                <div>
+                                    <i title="Create new Admin" class="br-10 p-5px bg-light add bx bx-user-plus font-7 pointer"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow scale-up br-10 p-2">
+                            <div class="grid align-items-center justify-space-between">
+                                <h3 class="font-5">Staff</h3>
+                                <i class="count-icon bx bx-user-voice font-7"></i>
+                                <span class="font-3">10</span>
+                            </div>
+                        </div>
+                        <div class="card shadow scale-up br-10 p-2">
+                            <div class="grid align-items-center justify-space-between">
+                                <h3 class="font-5">Student</h3>
+                                <i class="count-icon bx bx-user-circle font-7"></i>
+                                <span class="font-3">10</span>
+                            </div>
+                        </div>
+                        <div class="card shadow scale-up br-10 p-2">
+                            <div class="grid align-items-center justify-space-between">
+                                <h3 class="font-5">Parent</h3>
+                                <i class="count-icon bx bx-group font-7"></i>
+                                <span class="font-3">10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="hits grid card br-10 p-2">
+                        <div>
+                            <h3 class="font-5">Hits</h3>
+                        </div>
+                    </div> -->
+
+                    <div class="account shadow grid grid-gap-35 card br-10 p-2">
+                        <div class="wallet grid bg-light-primary br-10 p-2 text-white">
+                            <div>
+                                <div class="flex flex-column">
+                                    <div class="my-1">
+                                        <i class="font-16 bx bx-wallet"></i>
+                                    </div>
+                                    <div class="flex align-items-center font-5 amount">
+                                        <i class="bx bx-dollar"></i>
+                                        <!-- <s>N</s> -->
+                                        <p>
+                                            100,000,000
+                                        </p>
+                                    </div>
+    
+                                    <p class="mb-4 balance">Account Balance</p>
+                                    
+                                    <a href="" class="text-white set-amount">Set Account Details</a>
+                                </div>
+                            </div>
+                            <div class="content flex align-items-center justify-content-center bg-white shadow-light br-10 text-dark-primary pointer">
+                                <div class="currency rotate-90-ngt flex align-items-center">
+                                    <p class="font-6 amount">Naira</p>
+                                    <i class="sync font-8 bx bx-sync ml-5" style="margin-top: 5px"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid payments">
+                            <div>
+                                <h3 class="font-5">Payments Overview</h3>
+                                <p class="my-1 text-justify">
+                                    Percentage of payments made to staffs as salaries and payments from students enrolled on the platform
+                                </p>
+
+                                <div class="overview">
+                                    <div class="grid grid-3 align-items-center pb-1">
+                                        <i class="text-primary font-4 bx bxs-circle"></i>    
+                                        <p>Admin</p>    
+                                        <span>20%</span>    
+                                    </div>
+                                    <div class="grid grid-3 align-items-center pb-1">
+                                        <i class="text-warning font-4 bx bxs-circle"></i>    
+                                        <p>Staff</p>    
+                                        <span>20%</span>    
+                                    </div>
+                                    <div class="grid grid-3 align-items-center pb-1">
+                                        <i class="text-success font-4 bx bxs-circle"></i>    
+                                        <p>Student</p>    
+                                        <span>20%</span>    
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-content-center align-items-center">
+                                <div class="piechart shadow-light-primary scale-up" style="background-image: conic-gradient(var(--success-color) 80deg, var(--warning-color) 0 210deg, var(--primary-color) 0)"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats grid my-2">
+                        <div class="underlings">
+                            <div class="card shadow br-10 p-0 pb-1">
+                                <div class="flex justify-space-between align-items-center h-100 bg-primary text-white p-1 br-10" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                    <h3 class="font-4">Users</h3>
+                                    <i class="bx bx-user font-5 font-900"></i>
+                                </div>
+    
+                                <div class="flex views shadow hover justify-space-between align-items-center my-3 bg-light mx-1 br-10 p-1">
+                                    <h3 class="font-3">Admins</h3>
+                                    <span class="visits">Daily Visits: 10</span>
+                                    <button class="btn btn-primary p-1 br-10">
+                                        View All
+                                    </button>
+                                </div>
+                                <div class="flex views shadow hover justify-space-between align-items-center my-3 bg-light mx-1 br-10 p-1">
+                                    <h3 class="font-3">Staff</h3>
+                                    <span class="visits">Daily Visits: 10</span>
+                                    <button class="btn btn-primary p-1 br-10">
+                                        View All
+                                    </button>
+                                </div>
+                                <div class="flex views shadow hover justify-space-between align-items-center my-3 bg-light mx-1 br-10 p-1">
+                                    <h3 class="font-3">Student</h3>
+                                    <span class="visits">Daily Visits: 10</span>
+                                    <button class="btn btn-primary p-1 br-10">
+                                        View All
+                                    </button>
+                                </div>
+                                <div class="flex views shadow hover justify-space-between align-items-center my-3 bg-light mx-1 br-10 p-1">
+                                    <h3 class="font-3">Parent</h3>
+                                    <span class="visits">Daily Visits: 10</span>
+                                    <button class="btn btn-primary p-1 br-10">
+                                        View All
+                                    </button>
+                                </div>
+                                <div class="flex views shadow hover justify-space-between align-items-center my-3 bg-light mx-1 br-10 p-1">
+                                    <h3 class="font-3">Institutes</h3>
+                                    <span class="visits">Daily Visits: 10</span>
+                                    <button class="btn btn-primary p-1 br-10">
+                                        View All
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sch-sets">
+                            <div class="card shadow br-10 p-2">
+                                <div class="flex justify-space-between mb-1">
+                                    <h3 class="font-5">Grade System</h3>
+
+                                    <button class="btn br-10 h-40 px-8px">
+                                        <i class="bx bx-plus font-5"></i>
+                                    </button>
+                                </div>
+                                <div class="my-1">
+                                    <p class="text-justify">
+                                        Set the grade obtainable scores and grade remarks for each grade range.
+                                    </p>
+                                    <p class="text-success font-1">Please ensure to avoid overlapping grade ranges with existing grades</p>
+                                </div>
+
+                                <div class="grade my-1 max-height-450">
+                                    <div class="bg-light p-1 hover shadow br-10 mx-0 my-2">
+                                        <div class="grid grid-2">
+                                            <div class="w-90">
+                                                <div class="grid grid-3 align-items-center pb-1">
+                                                    <i class="text-success font-4 bx bxs-circle"></i>    
+                                                    <p>A</p>    
+                                                    <span class="text-right">90 - 100</span>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, distinctio.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="flex flex-column px-1">
+                                                    <i class="bx bx-edit pointer mb-2"></i> 
+                                                    <i class="text-danger bx bx-trash pointer"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-light p-1 hover shadow br-10 mx-0 my-2">
+                                        <div class="grid grid-2">
+                                            <div class="w-90">
+                                                <div class="grid grid-3 align-items-center pb-1">
+                                                    <i class="text-primary font-4 bx bxs-circle"></i>    
+                                                    <p>B</p>    
+                                                    <span class="text-right">80 - 89</span>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, distinctio.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="flex flex-column px-1">
+                                                    <i class="bx bx-edit pointer mb-2"></i> 
+                                                    <i class="text-danger bx bx-trash pointer"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-light p-1 hover shadow br-10 mx-0 my-2">
+                                        <div class="grid grid-2">
+                                            <div class="w-90">
+                                                <div class="grid grid-3 align-items-center pb-1">
+                                                    <i class="text-light-primary font-4 bx bxs-circle"></i>    
+                                                    <p>C</p>    
+                                                    <span class="text-right">65 - 79</span>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, distinctio.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="flex flex-column px-1">
+                                                    <i class="bx bx-edit pointer mb-2"></i> 
+                                                    <i class="text-danger bx bx-trash pointer"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-light p-1 hover shadow br-10 mx-0 my-2">
+                                        <div class="grid grid-2">
+                                            <div class="w-90">
+                                                <div class="grid grid-3 align-items-center pb-1">
+                                                    <i class="text-secondary font-4 bx bxs-circle"></i>    
+                                                    <p>D</p>    
+                                                    <span class="text-right">50 - 64</span>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, distinctio.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="flex flex-column px-1">
+                                                    <i class="bx bx-edit pointer mb-2"></i> 
+                                                    <i class="text-danger bx bx-trash pointer"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-light p-1 hover shadow br-10 mx-0 my-2">
+                                        <div class="grid grid-2">
+                                            <div class="w-90">
+                                                <div class="grid grid-3 align-items-center pb-1">
+                                                    <i class="text-dark font-4 bx bxs-circle"></i>    
+                                                    <p>E</p>    
+                                                    <span class="text-right">35 - 49</span>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, distinctio.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="flex flex-column px-1">
+                                                    <i class="bx bx-edit pointer mb-2"></i> 
+                                                    <i class="text-danger bx bx-trash pointer"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-light p-1 hover shadow br-10 mx-0 my-2">
+                                        <div class="grid grid-2">
+                                            <div class="w-90">
+                                                <div class="grid grid-3 align-items-center pb-1">
+                                                    <i class="text-danger font-4 bx bxs-circle"></i>    
+                                                    <p>F</p>    
+                                                    <span class="text-right">0 - 34</span>
+                                                </div>
+                                                <p>
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, distinctio.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <div class="flex flex-column px-1">
+                                                    <i class="bx bx-edit pointer mb-2"></i> 
+                                                    <i class="text-danger bx bx-trash pointer"></i> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn font-3 font-900 w-100 br-10 h-60 btn-outline-primary my-1">New Grade</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="session">
+                        <div class="card shadow p-1 br-10">
+                            <div class="flex justify-space-between">
+                                <h3 class="font-5">Class Sessions</h3>
+                                <button class="btn br-10 h-40 px-8px">
+                                    <i class="bx bx-plus font-5"></i>
+                                </button>
+                            </div>
+                            <div class="mb-1">
+                                <p class="text-justify">Sessions indicates how long a user's subscription to a class will last.</p>
+                            </div>
+                            <div class="hscroll">
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">2 Years</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>24 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">1 Year</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>12 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Half a year</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>6 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Quarterly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>4 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Trimonthly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>3 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Bimonthly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>2 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Monthly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>1 month</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certs mt-2">
+                        <div class="card shadow p-1 br-10">
+                            <div class="flex justify-space-between mb-1">
+                                <h3 class="font-5">Certificates</h3>
+                                <button class="btn br-10 h-40 px-8px">
+                                    <i class="bx bx-plus font-5"></i>
+                                </button>
+                            </div>
+                            <div class="hscroll">
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Cert Name</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="">
+                                            <p>Certificate details</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Holders</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">1 Year</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>12 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Half a year</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>6 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Quarterly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>4 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Trimonthly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>3 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Bimonthly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>2 months</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="card shadow p-0">
+                                    <div class="flex justify-space-between align-items-center h-70 bg-primary text-white p-1" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                                        <h3 class="font-4">Monthly</h3>
+                                        <i class="bx pointer bx-dots-vertical-rounded font-5 font-900"></i>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="flex justify-space-between">
+                                            <h4>Duration</h4>
+                                            <p>1 month</p>
+                                        </div>
+
+                                        <button class="btn btn-primary p-1 w-100 br-10 mt-2">
+                                            <div class="flex justify-space-between">
+                                                <h4>View Classes</h4>
+                                                <small>10</small>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="sch">
+                        <div class="card shadow br-10 pt-2">
+                            <div class="flex justify-space-between mx-10px">
+                                <h4 class="font-5 mb-1">Classes</h4>
+                                <button class="btn br-10 h-40 px-8px">
+                                    <i class="bx bx-plus font-5"></i>
+                                </button>
+                            </div>
+                            <div class="sch-classes mt-1 max-height-300">
+                                <!-- <p class="empty text-center font-3">
+                                    No classes have been yet.
+                                </p> -->
+                                
+                                <div class="card shadow hover br-10 p-2 flex justify-content-center justify-space-between relative ">
+                                    <div class="flex align-items-center">
+                                        <i class="bx bx-cog mr-8px font-4 pointer"></i>
+                                        <h4 class="font-3" title="Grade 1">Grade 1</h4>
+                                    </div>
+                                    <div>
+                                        <i class="bx bx-eye"></i>
+                                        <i class="tool-tab-btn bx bx-dots-vertical-rounded font-5 pointer"></i>
+                                        <div class="tool-tab shadow classes absolute br-10 text-left grid align-items-center justify-space-between">
+                                            <div>
+                                                <button class="btn flex p-1 outline br-10 btn-primary">
+                                                    <i class="bx bx-edit mr-5px font-3"></i>
+                                                    View
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <div class="edit">
+                                                    <a href="#" class="text-dark  b-1">Edit</a>
+                                                </div>
+    
+                                                <div class="delete">
+                                                    <a href="#" class="text-danger">Delete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mx-10px">
+                                <button class="btn font-3 font-900 w-100 br-10 h-60 btn-outline-primary mt-2">Create Class</button>
+                            </div>
+                        </div>
+                        <!-- <div>
+                        </div>
+
+                        <div>
+                            <div class="card shadow br-10 p-2">
+                                <div class="flex justify-space-between">
+                                    <h4 class="font-5 mb-1">Courses</h4>   
+                                    <button class="btn br-10 h-40 px-8px">
+                                        <i class="bx bx-plus font-5"></i>
+                                    </button>
+                                </div>
+                                <div class="sch-courses mt-1 max-height-300">
+                                    <div class="card shadow hover br-10 p-2 flex justify-content-center justify-space-between relative">
+                                        <h4 class="font-3" title="Mathematics">Mathematics</h4>
+                                        <div>
+                                            <i class="bx bx-eye"></i>
+                                            <i class="tool-tab-btn bx bx-dots-vertical-rounded font-5 pointer"></i>
+                                            <div class="tool-tab shadow course absolute br-10 text-left grid align-items-center justify-space-between">
+                                                <div>
+                                                    <button class="btn flex p-1 outline br-10 btn-primary">
+                                                        <i class="bx bx-outline mr-5px font-3"></i>
+                                                        outline
+                                                    </button>
+                                                </div>
+
+                                                <div>
+                                                    <div class="edit">
+                                                        <a href="#" class="text-dark  b-1">Edit</a>
+                                                    </div>
+        
+                                                    <div class="delete">
+                                                        <a href="#" class="text-danger">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn font-3 font-900 w-100 br-10 h-60 btn-outline-primary mt-2">Create Course</button>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="footer">
+                        <div class="bg-white card shadow br-10 mt-4 p-1">
+                            <p class="text-center">IClass - Copyright &copy; 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section class="overlay absolute hp-100 w-100 backdrop-blur-4">
+
+        </section>
+        <script src="./script/js.js"></script>
+    </body>
+</html>
