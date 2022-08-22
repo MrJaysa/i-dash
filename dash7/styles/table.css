@@ -1,0 +1,130 @@
+.table {
+    border-top-left-radius: .4em;
+    border-top-right-radius: .4em;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.table td:first-child {
+    padding-top: .5em;
+}
+
+.table td:last-child {
+    padding-bottom: .5em;
+}
+
+.table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 6.5em;
+    display: inline-block;
+}
+
+.table th, .table td {
+    margin: .5em 1em;
+}
+
+.table thead tr {
+    background-color: var(--primary-color);
+    color: var(--text-color)
+}
+
+.table.infinite-scroll tbody tr.more-item {
+    background: none;
+    color: var(--hovered); 
+}
+
+@media (min-width: 769px) {
+    .table {
+        width: 100%
+    }
+
+    .table td:before {
+        display: none;
+    }
+
+    .table th, .table td {
+        padding: 1em !important;
+        padding: .25em .5em;
+    }
+    
+    .table tbody tr:nth-child(odd) {
+        background-color: var(--hovered);
+    }
+    
+    .table tbody tr:nth-child(even) {
+        border-inline: 1px solid var(--hovered);
+        border-bottom: 1px solid var(--hovered);
+    }
+
+    .table.infinite-scroll tbody tr.more-item {
+        border-inline: 1px solid var(--hovered);
+        border-bottom: 1px solid var(--hovered);
+    }
+}
+
+@media (max-width: 769px) {
+    .table {
+        background-color: var(--white);
+    }
+
+    .table th {
+        display: none;
+    }
+
+    .table tbody tr {
+        display: block;
+        padding: 1rem 0.5rem;
+        margin-block: 1.5rem;
+        margin-inline: 6px;
+        border-radius: 10px;
+        background-color: var(--light-primary-color);
+        color: var(--text-color)
+    }
+
+    .table.infinite-scroll tbody tr.more-item td {
+        text-align: left !important;
+    }
+    
+    .table.infinite-scroll tbody tr.more-item td::before {
+        display: none;
+    }
+
+    .table tbody td {
+        display: block;
+    }
+
+    .table th, .table td {
+        text-align: left;
+    }
+
+    .mhscroll {
+        width: 100% !important;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        display: block;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .mhscroll > tr {
+        scroll-snap-align: center;
+        display: inline-block !important;
+    }
+
+    .table.infinite-scroll .mhscroll tr.more-item {
+        width: 60px;
+        display: inline;
+    }
+    
+    .mhscroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollable-mhscroll {
+        display: block;
+    }
+}

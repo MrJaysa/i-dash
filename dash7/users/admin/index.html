@@ -5,18 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navs</title>
-        <link rel="stylesheet" href="./boxicons-2.1.2/css/boxicons.min.css">
-        <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/utilities.css">
+        <link rel="stylesheet" href="../../boxicons-2.1.2/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/utilities.css">
     </head>
     <body class="relative">
         <section class="sidebar">
             <div class="logo_content">
                 <div class="logo">
-                    <img src="./images/i-100.png" alt="">
+                    <img src="../../images/i-100.png" alt="">
                     <div class="logo_name font-8">Class</div>
                 </div>
-                <i class='bx bx-menu' id="btn" ></i>
+                <i class='bx bx-menu toggle-btn' id="btn"></i>
             </div>
 
             <ul class="nav">
@@ -35,7 +35,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="transaction.html">
                         <i class='bx bx-money bx-tada-hover' ></i>
                         <span class="links_name">Transactions</span>
                     </a>
@@ -43,7 +43,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="messages.html">
                         <i class='bx bx-chat bx-tada-hover' ></i>
                         <span class="links_name">Messages</span>
                     </a>
@@ -78,7 +78,7 @@
             <div class="profile_content">
                 <div class="profile">
                     <div class="profile_details">
-                        <img src="./images/user.jpg" alt="">
+                        <img src="../../images/user.jpg" alt="">
                         <div class="name_job">
                             <div class="name" title="Jessica Omo">Jessica Omo</div>
                             <div class="job">Web Developer</div>
@@ -94,8 +94,10 @@
             <div class="main-content">
                 <div class="topbar">
                     <div class="brand">
-                        <i class='bx bx-menu sm-menu' id="btn" ></i>
-                        <img class="icon" src="./images/i-class2.png" alt="">
+                        <div>
+                            <i class='bx bx-menu sm-menu toggle-btn pointer' id="btn"></i>
+                        </div>
+                        <img class="icon" src="../../images/i-class2.png" alt="">
                         <div class="logo_name">Class</div>
                     </div>
                     <div class="navigation">
@@ -141,11 +143,11 @@
                         </div>
                         
                         <div class="user cta">
-                            <img class="user-image" src="./images/user.jpg" alt="">
+                            <img class="user-image" src="../../images/user.jpg" alt="">
                             <div class="sub-dropdown">
                                 <div class="dropdown-head">
                                     <h3 class="font-2">Jessica Omo</h3>
-                                    <img src="./images/user.jpg" alt="">
+                                    <img src="../../images/user.jpg" alt="">
                                 </div>
                                 <ul>
                                     <li>
@@ -172,7 +174,7 @@
                                 <i class="count-icon bx bx-shield-quarter font-7"></i>
                                 <span class="font-3">10</span>
                                 <div>
-                                    <i title="Create new Admin" class="br-10 p-5px bg-light add bx bx-user-plus font-7 pointer"></i>
+                                    <i title="Create new Admin" class="br-10 p-5px bg-light add bx bx-user-plus font-7 pointer modal-toggle" data-target="#modal"></i>
                                 </div>
                             </div>
                         </div>
@@ -312,13 +314,11 @@
                             </div>
                         </div>
                         <div class="sch-sets">
-                            <div class="card shadow br-10 p-2">
+                            <div class="card shadow br-10 p-1">
                                 <div class="flex justify-space-between mb-1">
                                     <h3 class="font-5">Grade System</h3>
 
-                                    <button class="btn br-10 h-40 px-8px">
-                                        <i class="bx bx-plus font-5"></i>
-                                    </button>
+                                    <i class="br-10 p-5px bx bx-plus font-5 pointer bg-light modal-toggle" data-target="#modal"></i>
                                 </div>
                                 <div class="my-1">
                                     <p class="text-justify">
@@ -769,9 +769,9 @@
                         <div class="card shadow br-10 pt-2">
                             <div class="flex justify-space-between mx-10px">
                                 <h4 class="font-5 mb-1">Classes</h4>
-                                <button class="btn br-10 h-40 px-8px">
-                                    <i class="bx bx-plus font-5"></i>
-                                </button>
+                                <div>
+                                    <i class="br-10 p-5px bx bx-plus font-5 pointer bg-light modal-toggle" data-target="#modal"></i>
+                                </div>
                             </div>
                             <div class="sch-classes mt-1 max-height-300">
                                 <!-- <p class="empty text-center font-3">
@@ -863,9 +863,12 @@
             </div>            
         </section>
 
-        <section class="overlay absolute hp-100 w-100 backdrop-blur-4">
+        <div class="modal bg-darken overlay absolute hp-100 w-100 backdrop-blur-2 flex place-center" data-dismissible='true' id="modal">
+            <div class="card p-2 shadow wm-fmd">
+                test
+            </div>
+        </div>
 
-        </section>
-        <script src="./script/js.js"></script>
+        <script src="../../script/clicks.js"></script>
     </body>
 </html>

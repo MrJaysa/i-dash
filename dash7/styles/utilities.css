@@ -134,8 +134,9 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-gap-0 {gap: 0px;}
 .grid-gap-10 {gap: 10px;}
-.grid-gap-15 {gap: 15px;}
+.grid-gap-20 {gap: 20px;}
 .grid-gap-25 {gap: 25px;}
 .grid-gap-30 {gap: 30px;}
 .grid-gap-35 {gap: 35px;}
@@ -169,6 +170,11 @@
     place-items: center;
 }
 
+.place-center {
+    align-items: center;
+    justify-content: center;
+}
+
 /* background */
 .bg-white {
     background-color: var(--white);
@@ -180,6 +186,10 @@
 
 .bg-dark {
     background-color: var(--dark-text-color);
+}
+
+.bg-darken {
+    background-color: var(--hovered);
 }
 
 .bg-primary {
@@ -433,6 +443,10 @@
     margin: 4rem;
 }
 
+.mt-0 {
+    margin-top: 0;
+}
+
 .mt-1 {
     margin-top: 1rem;
 }
@@ -451,6 +465,10 @@
 
 .mt-5 {
     margin-top: 4rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 .mb-1 {
@@ -473,6 +491,10 @@
     margin-bottom: 4rem;
 }
 
+.ml-0 {
+    margin-left: 0;
+}
+
 .ml-1 {
     margin-left: 1rem;
 }
@@ -491,6 +513,10 @@
 
 .ml-5 {
     margin-left: 4rem;
+}
+
+.mr-0 {
+    margin-right: 0;
 }
 
 .mr-1 {
@@ -661,6 +687,14 @@
 .w-90 {width: 90%;}
 .w-100 {width: 100%;}
 
+.wm-flg {width: var(--modal-lg-fixed)}
+.wm-fmd {width: var(--modal-md-fixed)}
+.wm-fsm {width: var(--modal-sm-fixed)}
+
+.wm-lg {width: var(--modal-lg);}
+.wm-md {width: var(--modal-md);}
+.wm-sm {width: var(--modal-sm);}
+
 /* height */
 .h-40 {height: 40px}
 .h-50 {height: 50px}
@@ -803,6 +837,24 @@
     display: none;
 }
 
+/* Overlay */
+.overlay {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Modal */
+.modal {
+    transition: .55s ease all;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.modal.show {
+    transform: scale(1);
+    opacity: 1;
+}
 
 /* Filters */
 .backdrop-blur-1 {backdrop-filter: blur(1px);}
@@ -825,3 +877,63 @@
 
 .backdrop-blur-10 {backdrop-filter: blur(10px);}
 
+
+/* Switches */
+.switch-input {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch-input input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-input .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch-input .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--white);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch-input input:checked + .slider {
+    background-color: var(--light-primary-color);
+}
+
+.switch-input input:focus + .slider {
+    box-shadow: 0 0 1px var(--light-primary-color);
+}
+
+.switch-input input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px)
+}
+
+.switch-input .slider.round {
+    border-radius: 34px;
+}
+
+.switch-input .slider.round:before {
+    border-radius: 50%;
+}

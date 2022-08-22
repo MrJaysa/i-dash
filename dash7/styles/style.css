@@ -23,13 +23,19 @@
     --error-color: #d9534f;
     --warning-color: #fba51f;
 
-    --modal-width: 40rem;
-    --form-modal-width: 400px;
-
+    
     --transparent: transparent;
     
     /* modal widths */
-    --modal-width:
+    --form-modal-width: 400px;
+    --modal-width: 40rem;
+    
+    --modal-lg-fixed: 90%;
+    --modal-md-fixed: 70%;
+    --modal-sm-fixed: 50%;
+    --modal-lg: 90%;
+    --modal-md: 70%;
+    --modal-sm: 50%;
 }
 
 
@@ -465,7 +471,7 @@ a {
     background-color: var(--text-color);
     border-radius: 5px;
     display: none;
-    box-shadow: 0 2px 8px var(--dark-text-color);
+    box-shadow: 0 2px 8px var(--hovered);
 }
 
 .navigation .sub-dropdown .details {
@@ -602,10 +608,36 @@ a {
     user-select: auto;
 }
 
-.overlay {
-    top: 0;
+.payroll div input, .user-payments div input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     left: 0;
+    top: 0;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: var(--light-color);
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.payroll .bx-search, .user-payments .bx-search {
     z-index: 1;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 2.8px;
+    color: var(--hovered)
+}
+
+.content .message.grid {
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 1fr .5fr;
+}
+
+.content .message.grid div:nth-child(2) {
+    grid-row: 1 / 3;
+    grid-column: 2;
 }
 
 /* media screen */
@@ -700,6 +732,18 @@ a {
 
     .navigation .message, .navigation .notification, .navigation .user {
         margin-inline: 5px;
+    }
+}
+
+@media (max-width: 560px) {
+    .payroll .head.flex, .user-payments .head.flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payroll .relative, .user-payments .relative {
+        margin-top: 20px;
+        width: 100%;
     }
 }
 
