@@ -10,7 +10,9 @@
     --secondary-color: #0f426f;
     --info-color: #002488;
     --dark-primary-color: #061e33;
+    --dark-shade: #7a7a7a;
     --light-color: #f3f3f3a4;
+    --lighter-color: #f3f3f37a;
     --transparent-white: #ffffffbe;
     --hovered: rgba(0, 0, 0, 0.103);
     --light-primary-color: #0d4679;
@@ -62,6 +64,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 /* Sidebars */
@@ -325,7 +331,7 @@ a {
     left: 78px;
     transition: all 0.5s ease;
     z-index: 0;
-    background-color: var(--light-color);
+    background-color: var(--lighter-color);
 }
 
 .sidebar.active ~ .main {
@@ -608,7 +614,7 @@ a {
     user-select: auto;
 }
 
-.payroll div input, .user-payments div input {
+.payroll div input, .user-payments div input, .mbox div input {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -622,8 +628,8 @@ a {
     font-size: 18px;
 }
 
-.payroll .bx-search, .user-payments .bx-search {
-    z-index: 1;
+.payroll .bx-search, .user-payments .bx-search, .mbox .bx-search {
+    z-index: 0;
     font-size: 20px;
     padding-left: 15px;
     margin-top: 2.8px;
@@ -632,12 +638,161 @@ a {
 
 .content .message.grid {
     grid-template-columns: 1fr .5fr;
-    grid-template-rows: 1fr .5fr;
 }
 
-.content .message.grid div:nth-child(2) {
-    grid-row: 1 / 3;
-    grid-column: 2;
+.custom-textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+.sm-block {
+    display: none;
+}
+
+.message .m-controls {
+    border-bottom-left-radius: 12px;
+    border-top: 1px solid var(--light-color);
+}
+
+.message .mbox {
+    transition: 0.5s ease all;
+}
+
+.message .mbox .v-scroll div.grid-3 {
+    grid-template-columns: 40px 1fr 35px;
+}
+
+.feedback .time {
+    bottom: 0;
+    right: 0;
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+}
+
+.recipient {
+    height: 50px; 
+    width: 50px; 
+    border-radius: 50%;
+    outline: none
+}
+
+.recipient-user {
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+
+.m-users .chips {
+    display: inline-block;
+    padding: 0 12px;
+    line-height: 30px;
+    background-color: var(--light-color);
+    margin-top: 10px;
+}
+
+.m-users .chips:not(:first-child):not(:last-child) {
+    margin-inline: 3px;
+}
+
+.m-users .chips input {
+    display: none;
+}
+
+.m-users .chips label {
+    font-size: 10pt;
+}
+
+.m-users .chips i {
+    margin-left: 5px;
+    margin-top: 2.5px;
+}
+
+.statistics.grid-4 {
+    grid-template-columns: repeat(4, 25%) !important;
+    grid-template-rows: auto;
+    grid-gap: 0;
+}
+
+.statistics .blocks.card:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.statistics .blocks.card:nth-child(2) {
+    /* grid-area: rs / cs / span r / span c */
+    grid-area: 2 / 1 / span 2 / span 3;
+}
+
+.statistics .blocks.card:nth-child(3) {
+    grid-area: 2 / 4 / span 1 / span 1;
+}
+
+.statistics .blocks.card:nth-child(4) {
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+.statistics .blocks.card:nth-child(5) {
+    grid-column: 1 / 3;
+}
+
+.statistics .blocks.card:nth-child(6) {
+    grid-column: 3 / 5;
+}
+
+.dropdown-toggle {
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.accordion .head {
+    z-index: 1;
+}
+
+.accordion .body {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.accordion .body.active {
+    margin-top: 10px;
+}
+
+.cxgrid-3.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cxgrid-3 .full-width {
+    grid-column: 2 / 4;
+}
+
+.user-profile-card img {
+    width: 250px;
+    height: 250px;
+}
+
+.class-card {
+    width: 300px;
+}
+
+.class-card .class-course *:nth-child(odd) {
+    justify-self: flex-start;
+}
+
+.class-card .class-course *:nth-child(even) {
+    justify-self: flex-end;
+}
+
+.class-card .notice {
+    top: 15px;
+    right: 15px;
+}
+
+.chat.grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 73vh 50px;
 }
 
 /* media screen */
@@ -650,9 +805,17 @@ a {
     .payments.grid {
         grid-template-columns: 60% 40%;
     }
+    
+    .message .mbox .v-scroll .tag {
+        font-size: 60%;
+    }
+
+    .content .message.grid {
+        grid-template-columns: 1fr .8fr;
+    }
 }
 
-@media (max-width: 891px) {
+@media (max-width: 1016px) {
     .piechart {
         width: 200px;
         height: 200px;
@@ -666,6 +829,50 @@ a {
     .stats.grid {
         grid-template-columns: 1fr
     }
+
+    .statistics .blocks.card:nth-child(2) {
+        grid-area: 2 / 1 / span 2 / span 4;
+    }
+
+    .statistics .blocks.card:nth-child(3) {
+        grid-area: 4 / 1 / span 1 / span 2;
+    }
+
+    .statistics .blocks.card:nth-child(4) {
+        grid-area: 4 / 3 / span 1 / span 2;
+    }
+    
+    .cxgrid-3.grid-3 {
+        grid-template-columns: 100% !important;
+    }
+
+    .cxgrid-3 .full-width {
+        grid-column: 1 / 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .message .message-box {
+        margin-right: 0 !important;
+        border-bottom-right-radius: 0;
+    }
+    
+    .message .message-box .header {
+        border-top-right-radius: 0;
+    }
+    
+    .message .mbox {
+        margin-left: 0 !important;
+        border-bottom-left-radius: 0;
+    }
+    
+    .message .mbox .header {
+        border-top-left-radius: 0;
+    }
+
+    .message .m-users {
+        border-bottom-right-radius: 0;
+    }    
 }
 
 @media (max-width: 768px) {
@@ -733,6 +940,79 @@ a {
     .navigation .message, .navigation .notification, .navigation .user {
         margin-inline: 5px;
     }
+
+    .message.grid {
+        display: block !important;
+        position: relative !important;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .message .mbox {
+        position: absolute !important;
+        top: 0;
+        right: -100%;
+        margin-inline: 0;
+        width: 0;
+    }
+
+    .message .mbox.active {
+        right: 10px;
+        width: 90%
+    }
+
+    .message .bx-menu {
+        font-size: 14pt;
+        margin-left: 8px;
+    }
+
+    .sm-block {
+        display: block;
+    }
+
+    .message .title {
+        font-size: 13pt;
+    }
+
+    .message .switchers {
+        font-size: 14pt;
+    }
+
+    .message .slider:before {
+        height: 18px !important;
+        width: 18px !important;
+        left: 2px !important;
+        bottom: 3px !important;
+    }
+
+    .message .switch-input {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+    }
+
+    .message .switch-container {
+        margin-inline: 2px;
+    }
+
+    .message .switch-input input:checked + .slider:before {
+        -webkit-transform: translateX(17px);
+        -ms-transform: translateX(17px);
+        transform: translateX(17px)
+    }
+
+    .message .m-controls {
+        border-bottom-right-radius: 12px;
+    }
+
+    .feedback .feedmsg p {
+        padding-bottom: 40px;
+    }
+
+    .statistics.grid-4 {
+        display: block;
+    }
 }
 
 @media (max-width: 560px) {
@@ -744,6 +1024,14 @@ a {
     .payroll .relative, .user-payments .relative {
         margin-top: 20px;
         width: 100%;
+    }
+
+    .class-card {
+        width: 250px;
+    }
+
+    .staff-class.font-5 {
+        font-size: 14pt;
     }
 }
 
@@ -788,8 +1076,33 @@ a {
     .navigation .message .sub-dropdown {
         right: -120px;
     }
+
     .navigation .notification .sub-dropdown {
         right: -65px;
+    }
+
+    .message .mbox .v-scroll h5 {
+        font-size: 60%;
+    }
+    
+    .message .mbox .v-scroll p {
+        font-size: 60%;
+    }
+    
+    .class-card {
+        width: 170px;
+    }
+
+    .class-card a {
+        padding-inline: 2rem;
+    }
+
+    .staff-class {
+        font-size: 15pt !important;
+    }
+
+    .request-class {
+        padding-inline:0 !important;
     }
 }
 
@@ -799,5 +1112,13 @@ a {
         white-space: nowrap;
         overflow: hidden;
         width: 75%;
+    }
+
+    .message .mbox .v-scroll div.grid-3 {
+        grid-template-columns: 40px 1fr 25px;
+    }
+
+    .message .mbox .v-scroll .tag {
+        padding-inline: 7px !important;
     }
 }

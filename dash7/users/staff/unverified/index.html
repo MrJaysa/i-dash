@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navs</title>
+        <link rel="stylesheet" href="../../../boxicons-2.1.2/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../styles/style.css">
+        <link rel="stylesheet" href="../../../styles/utilities.css">
+    </head>
+    <body class="relative">
+        <section class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <img src="../../../images/i-100.png" alt="">
+                    <div class="logo_name font-8">Class</div>
+                </div>
+                <i class='pointer bx bx-menu toggle-btn' id="btn"></i>
+            </div>
+
+            <ul class="nav">
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bx-grid-alt' ></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                
+                <li>
+                    <a href="help.html">
+                        <i class='bx bx-help-circle bx-burst-hover'></i>
+                        <span class="links_name">Help</span>
+                    </a>
+                    <span class="tooltip">Help</span>
+                </li>
+            </ul>
+
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../../../images/user.jpg" alt="">
+                        <div class="name_job">
+                            <div class="name" title="Jessica Omo">Jessica Omo</div>
+                            <div class="job">Staff (Unverified)</div>
+                        </div>
+                    </div>
+
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="main">
+            <div class="main-content">
+                <div class="topbar">
+                    <div class="brand">
+                        <div>
+                            <i class='bx bx-menu sm-menu toggle-btn pointer' id="btn"></i>
+                        </div>
+                        <img class="icon" src="../../../images/i-class2.png" alt="">
+                        <div class="logo_name">Class</div>
+                    </div>
+                    <div class="navigation">
+                        <div class="message cta">
+                            <span class="count">9+</span>
+                            <i class='bx bx-message-alt' ></i>
+                            <div class="sub-dropdown">
+                                <ul>
+                                    <li>
+                                        <a class="details" href="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <div>
+                                                <span>Jessica Omo</span>
+                                                <span>11:23am</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="details" href="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <div>
+                                                <span>Jessica Omo</span>
+                                                <span>11:23am</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="notification cta">
+                            <span class="count">0</span>
+                            <i class='bx bx-bell' ></i>
+                            <div class="sub-dropdown">
+                                <p class="no-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="user cta">
+                            <img class="user-image" src="../../../images/user.jpg" alt="">
+                            <div class="sub-dropdown">
+                                <div class="dropdown-head">
+                                    <h3 class="font-2">Jessica Omo</h3>
+                                    <img src="../../../images/user.jpg" alt="">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a class="details" href="#">
+                                            <span class="links_name font-900">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="details" href="#">
+                                            <span class="links_name font-900">Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content pt-7">
+                    <div class="cxgrid-3 grid grid-3">
+                        <div>
+                            <div class="user-profile-card card br-10 shadow">
+                                <div class="px-2 py-3 flex flex-column align-items-center">
+                                    <img class="shadow br-50p" src="../../../images/user.jpg" alt="user">
+                                    <div class="mt-1 text-center">
+                                        <p class="font-4 font-800">Jessica Omoigberai Nkem</p>
+                                        <p class="font-2 mt-5p font-800 text-primary">goodnessomo33@gmail.com</p>
+                                        <p class="font-2 mt-1 pb-4 font-800 text-danger border-bottom-1">Unverified Staff</p>
+                                    </div>
+    
+                                    <div class="mt-4">
+                                        <a href="" class="font-900 text-primary">
+                                            <i class="bx bx-pen "></i>
+                                            Edit Profile
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="full-width">
+                            <div class="card shadow br-10">
+                                <p class="text-justify font-2 font-600 p-1">
+                                    Hello <span class="text-primary">Jessica Omoigberai Nkem</span>, you have successfully applied as a staff on iclass but the process of become a registered staff has not yet been completed, please follow the steps below to ensure that you move to the next level of our screening process.
+                                </p>
+                            </div>
+                            <div class="card shadow br-10 p-2 mt-3">
+                                <h3 class="pb-1">Requirements to enable staff verification</h3>
+                                <p class="border-bottom-1 pb-1">Please note, that the requirements are to be provided once.</p>
+                                <ul class="list-number pl-1 mt-5p font-600">
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>Submit your CV.</p>
+                                            <i data-body="#accordion-content" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content" class="body">
+                                            <form action="" class="preventDefault" enctype="multipart/form-data">
+                                                <div class="cform-control form-control pr-2 relative">
+                                                    <input type="file" class="custom-file-input" accept=".pdf, .docx">
+                                                    <!-- <span class="err-msg text-danger">error message</span> -->
+                                                </div>
+                                                <button type="submit" class="btn btn-primary py-1 px-5 br-10 mt-1 font-900">Submit</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>Submit proof of qualification.</p>
+                                            <i data-body="#accordion-content-2" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-2" class="body">
+                                            <form action="" class="preventDefault" enctype="multipart/form-data">
+                                                <div class="cform-control form-control pr-2 relative">
+                                                    <input type="file" class="custom-file-input" accept=".pdf, .docx">
+                                                    <!-- <span class="err-msg text-danger">error message</span> -->
+                                                </div>
+                                                <button type="submit" class="btn btn-primary py-1 px-5 br-10 mt-1 font-900">Submit</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>Have you ever taught in a classroom environment?.</p>
+                                            <i data-body="#accordion-content-3" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-3" class="body">
+                                            <form action="">
+                                                <div class="cform-control pattern-control form-control relative">
+                                                    <input type="text" id="env" pattern="[Yy][Ee][Ss]|[Nn][Oo]" placeholder="Yes or No" required>
+                                                    <label class="absolute cform-label text-primary" for="env">Enter "yes" or "no"</label>
+                                                    <span class="absolute err-msg text-danger">Please enter yes or no</span>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary py-1 mt-3 px-5 br-10 mt-1 font-900">Submit</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>Select from our list of educational courses/subjects which you can tutor professionally.</p>
+                                            <i data-body="#accordion-content-4" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-4" class="body">
+                                            <form action="">
+                                                <div class="cform-control form-control relative list-select pr-2">
+                                                    <select class="font-900 px-0i pt-0" name="" id="courses" aria-placeholder="dslf">
+                                                        <option selected>Select Course</option>
+                                                        <option value="test1">test1</option>
+                                                        <option value="test2">test2</option>
+                                                        <option value="test3">test3</option>
+                                                    </select>
+                                                    <!-- <span class="err-msg text-danger">error message</span> -->
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>How much would you like to be paid per month in Naira?.</p>
+                                            <i data-body="#accordion-content-5" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-5" class="body">
+                                            <form action="">
+                                                <div class="cform-control form-control relative pr-2">
+                                                    <input class="text-dark-primary" type="number" id="amount" min="0" step="1000" placeholder="Amount" required>
+                                                    <label class="absolute cform-label text-primary" for="amount">Preferred Pay per month</label>
+                                                    <!-- <span class="err-msg text-danger">error message</span> -->
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>If you have a port-folio website, please enter it's url. <small class="ml-1 text-danger">(optional)</small></p>
+                                            <i data-body="#accordion-content-6" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-6" class="body">
+                                            <form action="">
+                                                <div class="cform-control form-control relative">
+                                                    <input class="text-dark-primary" type="text" id="test" placeholder="Enter url e.g https://portfolio.com" required>
+                                                    <label class="absolute cform-label text-primary" for="test">Port-Folio Url</label>
+                                                    <!-- <span class="err-msg text-danger">error message</span> -->
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>Can you work remotely following a scheme of contents?.</p>
+                                            <i data-body="#accordion-content-7" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-7" class="body">
+                                            <form action="">
+                                                <div class="cform-control pattern-control form-control relative">
+                                                    <input type="text" id="env" pattern="[Yy][Ee][Ss]|[Nn][Oo]" placeholder="Yes or No" required>
+                                                    <label class="absolute cform-label text-primary" for="env">Enter "yes" or "no"</label>
+                                                    <span class="absolute err-msg text-danger">Please enter yes or no</span>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary py-1 mt-3 px-5 br-10 mt-1 font-900">Submit</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="my-2 accordion">
+                                        <div class="head flex justify-space-between align-items-center">
+                                            <p>Are you okay with providing contents when beckoned?.</p>
+                                            <i data-body="#accordion-content-8" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                                        </div>
+                                        <div id="accordion-content-8" class="body">
+                                            <form action="">
+                                                <div class="cform-control pattern-control form-control relative">
+                                                    <input type="text" id="env" pattern="[Yy][Ee][Ss]|[Nn][Oo]" placeholder="Yes or No" required>
+                                                    <label class="absolute cform-label text-primary" for="env">Enter "yes" or "no"</label>
+                                                    <span class="absolute err-msg text-danger">Please enter yes or no</span>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary py-1 mt-3 px-5 br-10 mt-1 font-900">Submit</button>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer">
+                        <div class="bg-white card shadow br-10 mt-4 p-1">
+                            <p class="text-center">IClass - Copyright &copy; 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <div class="modal bg-darken overlay absolute hp-100 w-100 backdrop-blur-2 flex place-center" data-dismissible='true' id="modal">
+            <div class="card p-2 shadow wm-fmd">
+                test
+            </div>
+        </div>
+
+        <script src="../../../script/clicks.js"></script>
+        <script src="../../../script/accordion.js"></script>
+    </body>
+</html>

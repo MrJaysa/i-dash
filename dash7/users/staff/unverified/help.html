@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navs</title>
+        <link rel="stylesheet" href="../../../boxicons-2.1.2/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../styles/style.css">
+        <link rel="stylesheet" href="../../../styles/utilities.css">
+        <link rel="stylesheet" href="../../../styles/table.css">
+    </head>
+    <body class="relative">
+        <section class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                    <img src="../../../images/i-100.png" alt="">
+                    <div class="logo_name font-8">Class</div>
+                </div>
+                <i class='pointer bx bx-menu toggle-btn' id="btn"></i>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="index.html">
+                        <i class='bx bx-grid-alt' ></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                
+                <li class="active">
+                    <a href="#">
+                        <i class='bx bx-help-circle bx-burst-hover'></i>
+                        <span class="links_name">Help</span>
+                    </a>
+                    <span class="tooltip">Help</span>
+                </li>
+            </ul>
+
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../../../images/user.jpg" alt="">
+                        <div class="name_job">
+                            <div class="name" title="Jessica Omo">Jessica Omo</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="main">
+            <div class="main-content">
+                <div class="topbar">
+                    <div class="brand">
+                        <div>
+                            <i class='bx bx-menu sm-menu toggle-btn pointer' id="btn"></i>
+                        </div>
+                        <img class="icon" src="../../../images/i-class2.png" alt="">
+                        <div class="logo_name">Class</div>
+                    </div>
+                    <div class="navigation">
+                        <div class="message cta">
+                            <span class="count">9+</span>
+                            <i class='bx bx-message-alt' ></i>
+                            <div class="sub-dropdown">
+                                <ul>
+                                    <li>
+                                        <a class="details" href="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <div>
+                                                <span>Jessica Omo</span>
+                                                <span>11:23am</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="details" href="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet.
+                                            </p>
+                                            <div>
+                                                <span>Jessica Omo</span>
+                                                <span>11:23am</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="notification cta">
+                            <span class="count">0</span>
+                            <i class='bx bx-bell' ></i>
+                            <div class="sub-dropdown">
+                                <p class="no-info">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="user cta">
+                            <img class="user-image" src="../../../images/user.jpg" alt="">
+                            <div class="sub-dropdown">
+                                <div class="dropdown-head">
+                                    <h3 class="font-2">Jessica Omo</h3>
+                                    <img src="../../../images/user.jpg" alt="">
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a class="details" href="#">
+                                            <span class="links_name font-900">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="details" href="#">
+                                            <span class="links_name font-900">Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content pt-7">
+                    <div class="card shadow accordion br-10 p-2 mb-2">
+                        <div class="head flex justify-space-between align-items-center">
+                            <h3>Frequently Asked questions</h3>
+                            <i data-body="#accordion-content" class="dropdown-toggle bx bx-chevron-right font-6"></i>
+                        </div>
+                        <div id="accordion-content" class="body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga nihil ratione repellendus quaerat architecto! Est quisquam ullam quas officiis?
+                        </div>
+                    </div>
+
+                    <div class="card shadow br-10 p-2">
+                        <h3>Reach out to Iclass-System Administrative for help</h3>
+                        <div>
+                            <form action="">
+                                <textarea name="" id="" cols="30" rows="10" class="custom-textarea p-0 mt-1 border-bottom-1 w-100" placeholder="Enter your message"></textarea>
+                                <button type="submit" class="mt-2 btn btn-primary br-10 p-1 px-5 font-2 font-800">Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer">
+                        <div class="bg-white card shadow br-10 mt-4 p-1">
+                            <p class="text-center">IClass - Copyright &copy; 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <div class="modal bg-darken overlay absolute hp-100 w-100 backdrop-blur-2 flex place-center" data-dismissible='true' id="modal">
+            <div class="card p-2 shadow wm-fmd">
+                test
+            </div>
+        </div>
+
+        <script src="../../../script/clicks.js"></script>
+        <script src="../../../script/accordion.js"></script>
+    </body>
+</html>  

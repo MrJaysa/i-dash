@@ -5,16 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Navs</title>
-        <link rel="stylesheet" href="../../boxicons-2.1.2/css/boxicons.min.css">
-        <link rel="stylesheet" href="../../styles/style.css">
-        <link rel="stylesheet" href="../../styles/utilities.css">
-        <link rel="stylesheet" href="../../styles/table.css">
+        <link rel="stylesheet" href="../../../boxicons-2.1.2/css/boxicons.min.css">
+        <link rel="stylesheet" href="../../../styles/style.css">
+        <link rel="stylesheet" href="../../../styles/utilities.css">
+        <link rel="stylesheet" href="../../../styles/table.css">
     </head>
     <body class="relative">
         <section class="sidebar">
             <div class="logo_content">
                 <div class="logo">
-                    <img src="../../images/i-100.png" alt="">
+                    <img src="../../../images/i-100.png" alt="">
                     <div class="logo_name font-8">Class</div>
                 </div>
                 <i class='pointer bx bx-menu toggle-btn' id="btn"></i>
@@ -58,14 +58,6 @@
                     </a>
                     <span class="tooltip">Statistics</span>
                 </li>
-
-                <li>
-                    <a href="setting.html">
-                        <i class='bx bx-spin-hover bx-cog' ></i>
-                        <span class="links_name">Settings</span>
-                    </a>
-                    <span class="tooltip">Settings</span>
-                </li>
                 
                 <li>
                     <a href="help.html">
@@ -79,7 +71,7 @@
             <div class="profile_content">
                 <div class="profile">
                     <div class="profile_details">
-                        <img src="../../images/user.jpg" alt="">
+                        <img src="../../../images/user.jpg" alt="">
                         <div class="name_job">
                             <div class="name" title="Jessica Omo">Jessica Omo</div>
                             <div class="job">Web Developer</div>
@@ -98,7 +90,7 @@
                         <div>
                             <i class='bx bx-menu sm-menu toggle-btn pointer' id="btn"></i>
                         </div>
-                        <img class="icon" src="../../images/i-class2.png" alt="">
+                        <img class="icon" src="../../../images/i-class2.png" alt="">
                         <div class="logo_name">Class</div>
                     </div>
                     <div class="navigation">
@@ -144,11 +136,11 @@
                         </div>
                         
                         <div class="user cta">
-                            <img class="user-image" src="../../images/user.jpg" alt="">
+                            <img class="user-image" src="../../../images/user.jpg" alt="">
                             <div class="sub-dropdown">
                                 <div class="dropdown-head">
                                     <h3 class="font-2">Jessica Omo</h3>
-                                    <img src="../../images/user.jpg" alt="">
+                                    <img src="../../../images/user.jpg" alt="">
                                 </div>
                                 <ul>
                                     <li>
@@ -168,15 +160,6 @@
                 </div>
 
                 <div class="content pt-7">
-
-                    <div class="revenue card shadow br-10 p-2 flex justify-space-between align-items-center mb-2">
-                        <h3>IClass Revenue</h3>
-                        <div class="flex align-items-center">
-                            <i class="bx bx-dollar font-3"></i>
-                            <p class="font-2 font-800">100,000,000,000</p>
-                        </div>
-                    </div>
-
                     <div class="account shadow grid grid-gap-35 card br-10 p-2 my-2">
                         <div class="wallet grid bg-light-primary br-10 p-2 text-white">
                             <div>
@@ -192,9 +175,9 @@
                                         </p>
                                     </div>
     
-                                    <p class="mb-4 balance">Account Balance</p>
-                                    
+                                    <p class="mb-5 balance">Account Balance</p>
                                     <a href="" class="text-white set-amount">Set Account Details</a>
+                                    <a href="" class="withdraw py-8p mt-1 btn btn-success font-2 font-900 text-center br-10">Withdraw</a>
                                 </div>
                             </div>
                             <div class="content flex align-items-center justify-content-center bg-white shadow-light br-10 text-dark-primary pointer">
@@ -205,35 +188,37 @@
                             </div>
                         </div>
 
-                        <div class="grid payments">
+                        <div class="grid payments align-items-center">
                             <div>
                                 <h3 class="font-5">Payments Overview</h3>
                                 <p class="my-1 text-justify">
-                                    Percentage of payments made to staffs as salaries and payments from students enrolled on the platform
+                                    Percentage of payments made to you showing your total earnings made on the system, previous months pay and possible deductions due to misconducts.
                                 </p>
 
                                 <div class="overview">
                                     <div class="grid grid-3 align-items-center pb-1">
-                                        <i class="text-primary font-4 bx bxs-circle"></i>    
-                                        <p>Admin</p>    
-                                        <span>20%</span>    
-                                    </div>
-                                    <div class="grid grid-3 align-items-center pb-1">
-                                        <i class="text-warning font-4 bx bxs-circle"></i>    
-                                        <p>Staff</p>    
-                                        <span>20%</span>    
-                                    </div>
-                                    <div class="grid grid-3 align-items-center pb-1">
+                                        <i class="text-secondary font-4 bx bxs-circle"></i>    
+                                        <p>Previous months pay</p>    
+                                        <span>20k</span>
+
                                         <i class="text-success font-4 bx bxs-circle"></i>    
-                                        <p>Student</p>    
-                                        <span>20%</span>    
+                                        <p>Total bonus</p>    
+                                        <span>4k</span>    
+                                    </div>
+
+                                    <div class="text-danger grid grid-3 align-items-center pb-1">
+                                        <i></i>    
+                                        <p class="font-800">Total deductions</p>    
+                                        <span class="font-800">2k</span>    
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="flex justify-content-center align-items-center">
-                                <div class="piechart shadow-light-primary scale-up" style="background-image: conic-gradient(var(--success-color) 80deg, var(--warning-color) 0 210deg, var(--primary-color) 0)"></div>
+                            <div class="flex justify-content-center align-items-center m-3">
+                                <canvas id="overview" width="100%" height="100%">
+                                    <p>Hello Fallback World</p>
+                                </canvas>
                             </div>
                         </div>
 
@@ -316,7 +301,7 @@
                     
                     <div class="user-payments card shadow my-2 p-2 br-10">
                         <div class="head flex justify-space-between align-items-center">
-                            <h3>Student Payment History</h3>
+                            <h3>Withdrawal History</h3>
                             <div class="relative w-40 h-50 flex align-items-center">
                                 <i class='bx bx-search'></i>
                                 <input type="text" placeholder="Search...">
@@ -389,7 +374,37 @@
             </div>
         </div>
 
-        <script src="../../script/clicks.js"></script>
-        <script src="../../script/search.js"></script>
+        <script src="../../../script/clicks.js"></script>
+        <script src="../../../script/search.js"></script>
+        <script src="../../../script/chart.js"></script>
+        <script>
+            const color = getComputedStyle(document.body)
+            const data = {
+                labels: [
+                    'Previous month payment',
+                    'Possible bonus'
+                ],
+                datasets: [{
+                    label: 'Payment Overview',
+                    data: [30000, 4000],
+                    backgroundColor: [
+                        color.getPropertyValue('--success-color'),
+                        color.getPropertyValue('--text-secondary'),
+                    ],
+                    hoverOffset: 4
+                }]
+            };
+            const DoughnutChart = new Chart(overview, {
+                type: 'pie',
+                data: data,
+                options: {
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        </script>
     </body>
 </html>  
